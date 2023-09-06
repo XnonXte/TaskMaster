@@ -1,5 +1,7 @@
 # TaskMaster
 
+![Mockup image](./mockup.png)
+
 Todo app made with React and bootstrap.
 
 ## Several Todos
