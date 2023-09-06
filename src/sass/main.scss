@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap");
+
+$header-font: "PT Sans", sans-serif;
+$text-font: "Open Sans", sans-serif;
+
+$font-family-sans-serif: $text-font;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+  font-size: 100%;
+}
+
+@import "../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../node_modules/bootstrap/scss/_variables.scss";
+
+$custom-theme-colors: (
+  // Every colors related to TaskMaster will have the prefix 'tm-'.
+  "tm-primary": hsl(225, 10%, 76%),
+  "tm-secondary": hsl(252, 10%, 10%),
+  "tm-danger": hsl(9, 57%, 43%),
+  "tm-success": hsl(192, 10%, 50%),
+  "tm-warning": hsl(59, 72%, 46%),
+  "tm-light": hsl(0, 0%, 93%),
+  "tm-dark": hsl(0, 0%, 0%),
+  "xnon-accent": hsl(225, 100%, 60%)
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  background-color: hsl(252, 10%, 10%);
+}

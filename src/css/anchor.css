@@ -1,0 +1,11 @@
+/* CSS Styling for anchoring footer to the bottom of the viewport. */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
