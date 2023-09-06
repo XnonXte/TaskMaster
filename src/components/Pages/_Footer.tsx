@@ -5,7 +5,11 @@ const Footer = () => {
         <p className="border-bottom pb-3 mt-3">
           This application is created using React and Bootstrap. Interested on
           contributing?{" "}
-          <a target="_blank" href="#" className="link link-tm-primary">
+          <a
+            target="_blank"
+            href="https://github.com/XnonXte/TaskMaster/pulls"
+            className="link link-tm-primary"
+          >
             Open a PR!
           </a>
         </p>
